@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Process — FirstPath</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">FP</div>
+      FirstPath
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="overview.html">Overview</a></li>
+      <li><a href="design-process.html">Design Process</a></li>
+      <li><a href="prototyping.html">Prototype</a></li>
+      <li><a href="heuristic-evaluation.html">Evaluation</a></li>
+      <li><a href="reflections.html">Reflections</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Design Process</span>
+    <h1>Research, personas, and <span>storyboards</span></h1>
+    <p class="hero-sub">How we went from a problem statement to three concrete design tasks grounded in real evidence.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Needfinding</div>
+    <h2 class="section-title">What the research showed</h2>
+    <p class="section-body">Research was conducted using Reddit communities (r/FirstGeneration, r/ApplyingToCollege, r/ImmigrantAmericans), NCES and IPEDS federal datasets, Pew Research Center reports, and AI-assisted needfinding through NotebookLM and Claude. Six key findings emerged.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Finding 1 — Documented gap</h3>
+        <p>First-gen students complete FAFSA at lower rates than continuing-generation peers even when eligible — not because they're uninterested but because the process assumes prior institutional knowledge. <em>Source: NCES/IPEDS</em></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Finding 2 — Trust barriers</h3>
+        <p>Immigrant-background students avoid institutional resources out of fear tied to immigration status, even when those resources are completely unrelated. <em>Source: Higher Ed Immigration Portal, r/ImmigrantAmericans</em></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💬</div>
+        <h3>Finding 3 — Peer trust</h3>
+        <p>Students trust a friend who has "been through it" far more than any official portal. Word-of-mouth is the most reliable information channel. <em>Source: r/FirstGeneration</em></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📅</div>
+        <h3>Finding 4 — Late awareness</h3>
+        <p>Students find out about opportunities after deadlines pass — the problem is prior awareness, not forgetting. <em>Source: NCES BPS longitudinal data, r/ApplyingToCollege</em></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🗂️</div>
+        <h3>Finding 5 — Fragmentation</h3>
+        <p>No unified entry point exists. Students navigate across financial aid portals, department websites, and scholarship databases with no guidance on where to start. <em>Source: NotebookLM synthesis of DoE and IPEDS materials</em></p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Finding 6 — Language barriers</h3>
+        <p>Most portals assume familiarity with U.S. institutional culture and provide no multilingual support. Language access is a trust signal, not just an accessibility feature. <em>Source: McKinney-Vento guidance, r/ImmigrantAmericans</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Journey Map</div>
+    <h2 class="section-title">Sofia's experience before and after FirstPath</h2>
+    <p class="section-body">This journey map follows Sofia from the moment she realizes she's been missing scholarships to submitting her first application.</p>
+
+    <div class="journey">
+      <div class="journey-stage">
+        <div class="stage-num">Stage 1</div>
+        <div class="stage-name">Awareness</div>
+        <div class="stage-desc">Finds out from a classmate that a scholarship closed last week. She had no idea it existed.</div>
+        <span class="stage-emotion emotion-bad">Frustrated</span>
+      </div>
+      <div class="journey-stage">
+        <div class="stage-num">Stage 2</div>
+        <div class="stage-name">Searching</div>
+        <div class="stage-desc">Tries to find others on her own, lands on three confusing websites, gives up after 20 minutes.</div>
+        <span class="stage-emotion emotion-bad">Overwhelmed</span>
+      </div>
+      <div class="journey-stage">
+        <div class="stage-num">Stage 3</div>
+        <div class="stage-name">Discovery</div>
+        <div class="stage-desc">Hears about FirstPath, downloads it, sees "You likely qualify" for the first time.</div>
+        <span class="stage-emotion emotion-ok">Hopeful</span>
+      </div>
+      <div class="journey-stage">
+        <div class="stage-num">Stage 4</div>
+        <div class="stage-name">Evaluation</div>
+        <div class="stage-desc">Uses eligibility checker, gets a clear result, saves listing and sets a reminder.</div>
+        <span class="stage-emotion emotion-good">Relieved</span>
+      </div>
+      <div class="journey-stage">
+        <div class="stage-num">Stage 5</div>
+        <div class="stage-name">Action</div>
+        <div class="stage-desc">Gets the reminder notification, reads a peer tip, starts gathering documents that night.</div>
+        <span class="stage-emotion emotion-good">Motivated</span>
+      </div>
+      <div class="journey-stage">
+        <div class="stage-num">Stage 6</div>
+        <div class="stage-name">Outcome</div>
+        <div class="stage-desc">Submits two days before the deadline — her first application ever completed.</div>
+        <span class="stage-emotion emotion-good">Proud</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Task List</div>
+    <h2 class="section-title">Full app functionality</h2>
+    <div class="task-list">
+      <div class="task-item"><div class="task-num">1</div>Search for scholarships by major and background</div>
+      <div class="task-item"><div class="task-num">2</div>Check eligibility before applying</div>
+      <div class="task-item"><div class="task-num">3</div>Set a deadline reminder for a scholarship</div>
+      <div class="task-item"><div class="task-num">4</div>Switch the app language to Spanish</div>
+      <div class="task-item"><div class="task-num">5</div>Save a resource to a personal list</div>
+      <div class="task-item"><div class="task-num">6</div>Browse resources by category</div>
+      <div class="task-item"><div class="task-num">7</div>Receive a proactive deadline alert</div>
+      <div class="task-item"><div class="task-num">8</div>Read a peer tip on a resource listing</div>
+      <div class="task-item"><div class="task-num">9</div>Filter resources by location or school</div>
+      <div class="task-item"><div class="task-num">10</div>View step-by-step application breakdown</div>
+      <div class="task-item"><div class="task-num">11</div>Share a resource listing with a friend</div>
+      <div class="task-item"><div class="task-num">12</div>Mark a resource as applied or completed</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Storyboards</div>
+    <h2 class="section-title">Three tasks, three stories</h2>
+
+    <div class="storyboard-section">
+      <div class="storyboard-title">
+        Finding and saving a resource
+        <span class="task-badge">Task 1</span>
+      </div>
+      <p class="storyboard-desc">Sofia discovers FirstPath and gets a personalized list of scholarships for the first time.</p>
+      <div class="frames-grid">
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 1</div>
+          <div class="frame-content">Sofia stressed in the library, thinking about the scholarship her classmate got that she never knew existed.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 2</div>
+          <div class="frame-content">She downloads FirstPath and enters her background — first-gen, sophomore, Communication major.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 3</div>
+          <div class="frame-content">The app shows three scholarships in plain language. One says "You likely qualify" in green.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 4</div>
+          <div class="frame-content">She taps it and reads a short description that actually makes sense to her.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 5</div>
+          <div class="frame-content">She saves it and heads to class feeling like something is finally within reach.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storyboard-section">
+      <div class="storyboard-title">
+        Using the eligibility checker
+        <span class="task-badge">Task 2</span>
+      </div>
+      <p class="storyboard-desc">Sofia checks eligibility before investing time in an application she might not qualify for.</p>
+      <div class="frames-grid">
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 1</div>
+          <div class="frame-content">Sofia finds a scholarship that looks promising but is nervous about wasting time applying if she doesn't qualify.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 2</div>
+          <div class="frame-content">She taps "Check my eligibility" on the listing.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 3</div>
+          <div class="frame-content">A short form appears — four questions about GPA, major, enrollment status, and income range.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 4</div>
+          <div class="frame-content">The app shows a green result: "You qualify. Here's what you'll need to apply."</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 5</div>
+          <div class="frame-content">Sofia starts the application that night feeling confident instead of uncertain.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="storyboard-section">
+      <div class="storyboard-title">
+        Setting a deadline alert
+        <span class="task-badge">Task 3</span>
+      </div>
+      <p class="storyboard-desc">Sofia sets a reminder so a packed schedule doesn't cost her an opportunity she actually qualifies for.</p>
+      <div class="frames-grid">
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 1</div>
+          <div class="frame-content">Sofia saves a scholarship but knows her schedule is packed and she'll forget about it.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 2</div>
+          <div class="frame-content">She taps "Remind me" and picks one week before the deadline.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 3</div>
+          <div class="frame-content">A week later her phone buzzes — "Your deadline is in 7 days. You still have time."</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 4</div>
+          <div class="frame-content">She opens the app, reads a peer tip from a student who applied last year, and starts gathering her documents.</div>
+        </div>
+        <div class="frame-card">
+          <div class="frame-num-badge">Frame 5</div>
+          <div class="frame-content">She submits two days before the deadline — something that never would have happened without the alert.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <strong>FirstPath</strong> — CSE 400: Foundations of Human-Computer Interaction<br>
+  Emmanuel Peralta Castro · SUID: 463396105 · Syracuse University
+</footer>
+
+</body>
+</html>

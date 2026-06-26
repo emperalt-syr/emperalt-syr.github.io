@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heuristic Evaluation — FirstPath</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">FP</div>
+      FirstPath
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="overview.html">Overview</a></li>
+      <li><a href="design-process.html">Design Process</a></li>
+      <li><a href="prototyping.html">Prototype</a></li>
+      <li><a href="heuristic-evaluation.html">Evaluation</a></li>
+      <li><a href="reflections.html">Reflections</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Heuristic Evaluation</span>
+    <h1>What another team <span>found</span></h1>
+    <p class="hero-sub">Using Nielsen's 10 Usability Heuristics to identify issues in the lo-fi prototype and drive improvements in the final hi-fi design.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Evaluation Details</div>
+    <h2 class="section-title">How the evaluation was conducted</h2>
+    <p class="section-body">The heuristic evaluation was conducted by a peer team reviewing the FirstPath prototype against Nielsen's 10 Usability Heuristics. Each issue was rated on a severity scale from 0 (no problem) to 4 (usability catastrophe). The findings were then used to drive specific revisions in the final high-fidelity prototype.</p>
+    <p class="section-body">Evaluating team: <strong>[Add team/project name here]</strong></p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Findings</div>
+    <h2 class="section-title">Issues identified and fixes applied</h2>
+
+    <table class="h-table">
+      <thead>
+        <tr>
+          <th>Heuristic</th>
+          <th>Issue Found in Lo-Fi Prototype</th>
+          <th>Severity</th>
+          <th>Fix in Hi-Fi Prototype</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Visibility of System Status</strong></td>
+          <td>After saving a scholarship the reminder date was cut off on the confirmation screen — users couldn't tell exactly when they would be notified</td>
+          <td><span class="severity sev-2">Severity 2</span></td>
+          <td>Updated the confirmation screen to display the full reminder date clearly with a bell icon, a lock screen notification preview, and a full summary of what was saved</td>
+        </tr>
+        <tr>
+          <td><strong>Error Prevention</strong></td>
+          <td>The resource feed only showed a "You likely qualify" badge on one listing — users had to open every card just to find out if it was worth their time</td>
+          <td><span class="severity sev-3">Severity 3</span></td>
+          <td>Added an eligibility status indicator to every card on the feed so users can decide what's worth tapping before committing any time</td>
+        </tr>
+        <tr>
+          <td><strong>Help and Documentation</strong></td>
+          <td>The profile setup screen asked for personal background information with no explanation of why it was needed or how it would be used</td>
+          <td><span class="severity sev-2">Severity 2</span></td>
+          <td>Added a short privacy note — "We never share your info. Your answers only help us match you with the right resources" — to build trust before users fill anything out</td>
+        </tr>
+        <tr>
+          <td><strong>Consistency and Standards</strong></td>
+          <td>There was no language selector anywhere in the lo-fi prototype — a non-English speaker would have no way to switch languages before being asked to fill out a form</td>
+          <td><span class="severity sev-3">Severity 3</span></td>
+          <td>Language selector added to the onboarding flow so users can switch to Spanish or another supported language before entering any personal information</td>
+        </tr>
+        <tr>
+          <td><strong>Recognition Rather Than Recall</strong></td>
+          <td>The eligibility checker was not visible on the resource detail screen — users had to already know it existed to look for it</td>
+          <td><span class="severity sev-3">Severity 3</span></td>
+          <td>Made "Check my eligibility" a large, prominent link directly on the resource feed card and detail screen, with a note that it takes under one minute</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">What Changed</div>
+    <h2 class="section-title">Lo-fi to hi-fi: key transitions</h2>
+
+    <table class="h-table">
+      <thead>
+        <tr>
+          <th>What the Lo-Fi Prototype Had</th>
+          <th>What the Hi-Fi Prototype Changed</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>No language selector anywhere in the flow</td>
+          <td>Language selector added as the first screen users see</td>
+          <td>Non-English speakers shouldn't have to navigate through the whole app before finding it</td>
+        </tr>
+        <tr>
+          <td>Eligibility checker was a small line of text at the bottom of the listing frame</td>
+          <td>Made it a large, prominent button with a note saying "takes under 1 minute"</td>
+          <td>Users were missing it entirely — it needed to feel like a core feature, not a footnote</td>
+        </tr>
+        <tr>
+          <td>Peer tips only appeared as a caption in the storyboard</td>
+          <td>Built out as a full screen showing Maria Torres' name, year, major, quote, and three numbered tips</td>
+          <td>Research showed peer voices are the most trusted information channel for first-gen students</td>
+        </tr>
+        <tr>
+          <td>Reminder confirmation cut off the reminder date</td>
+          <td>Full confirmation screen with exact date, time, lock screen notification preview</td>
+          <td>Users had no way of knowing if the reminder actually saved or when it would fire</td>
+        </tr>
+        <tr>
+          <td>GPA field asked for an exact number</td>
+          <td>Changed to GPA ranges with a note that an estimate is fine and can be updated anytime</td>
+          <td>Students who don't know their exact GPA shouldn't be stopped from checking eligibility</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <strong>FirstPath</strong> — CSE 400: Foundations of Human-Computer Interaction<br>
+  Emmanuel Peralta Castro · SUID: 463396105 · Syracuse University
+</footer>
+
+</body>
+</html>

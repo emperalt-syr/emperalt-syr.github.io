@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype — FirstPath</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">FP</div>
+      FirstPath
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="overview.html">Overview</a></li>
+      <li><a href="design-process.html">Design Process</a></li>
+      <li><a href="prototyping.html">Prototype</a></li>
+      <li><a href="heuristic-evaluation.html">Evaluation</a></li>
+      <li><a href="reflections.html">Reflections</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Prototyping</span>
+    <h1>From storyboards to <span>high-fidelity screens</span></h1>
+    <p class="hero-sub">Built in Figma across three tasks — onboarding, eligibility checking, and deadline alerts.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Tools & Process</div>
+    <h2 class="section-title">How the prototype was built</h2>
+    <p class="section-body">The prototype was built in Figma using Figma AI to accelerate the screen design process. The design went through two major iterations — a low-fidelity prototype that established the basic flow and content, and a high-fidelity prototype that applied consistent visual design, added missing screens, and addressed issues identified during heuristic evaluation. All screens were designed mobile-first for iPhone with a consistent color system, bottom navigation bar, and plain-language copy throughout.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Design tool</h3>
+        <p>Figma — used for both lo-fi and hi-fi prototyping, with connected flows allowing click-through navigation across all three tasks.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📐</div>
+        <h3>Design system</h3>
+        <p>Consistent green color palette (dark forest green for primary actions, light green for positive results, amber for deadline urgency), Inter typeface, and rounded card components throughout.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>Iteration process</h3>
+        <p>Lo-fi prototype → heuristic evaluation → identified issues → revised hi-fi prototype. Key changes documented in the Evaluation page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Task 1</div>
+    <h2 class="section-title">Onboarding and finding a resource</h2>
+    <p class="section-body">Sofia opens FirstPath for the first time, enters her background, and gets a personalized list of scholarships she actually qualifies for.</p>
+
+    <div class="screens-grid">
+      <div class="screen-card">
+        <div class="screen-mock">📱 Onboarding screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Profile Setup</div>
+        <div class="screen-caption">Sofia enters her first-gen status, year, and major. A privacy note explains why the info is needed.</div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-mock">📱 Home feed screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Resource Feed</div>
+        <div class="screen-caption">Personalized feed shows 3 matching scholarships with amounts, deadlines, and eligibility badges.</div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-mock">📱 Resource detail screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Resource Detail</div>
+        <div class="screen-caption">Plain-language description, eligibility checklist, deadline in amber, and a "Save + Remind me" button.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Task 2</div>
+    <h2 class="section-title">Using the eligibility checker</h2>
+    <p class="section-body">Before spending an hour on an application, Sofia answers four quick questions and gets a clear yes or no in under a minute.</p>
+
+    <div class="screens-grid">
+      <div class="screen-card">
+        <div class="screen-mock">📱 Eligibility form screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Eligibility Check</div>
+        <div class="screen-caption">Four questions with radio buttons. Progress bar shows "Question 1 of 4." Takes under 1 minute.</div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-mock">📱 Results screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">You Qualify</div>
+        <div class="screen-caption">Large green checkmark, "You qualify!" in bold, match score, and bulleted document checklist.</div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-mock">📱 Start application screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Next Steps</div>
+        <div class="screen-caption">"Start application" primary button with "Set a deadline reminder first" as a secondary option.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Task 3</div>
+    <h2 class="section-title">Setting a deadline alert</h2>
+    <p class="section-body">Sofia sets a reminder with one tap and gets a push notification at the right moment — with a peer tip waiting for her when she opens it.</p>
+
+    <div class="screens-grid">
+      <div class="screen-card">
+        <div class="screen-mock">📱 Set reminder screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Set Reminder</div>
+        <div class="screen-caption">Four timing options with exact calendar dates. "1 week before" labeled as Recommended.</div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-mock">📱 Notification preview screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Reminder Confirmed</div>
+        <div class="screen-caption">Full lock screen preview of what the notification will look like. Exact date and time confirmed.</div>
+      </div>
+      <div class="screen-card">
+        <div class="screen-mock">📱 Peer tips screen<br><br>Insert screenshot here</div>
+        <div class="screen-label">Peer Tips</div>
+        <div class="screen-caption">Maria Torres, Junior, Communication Studies. Real quote and three numbered tips from someone who applied and won.</div>
+      </div>
+    </div>
+
+    <p style="font-size:13px; color: var(--text-muted); margin-top: 20px;">Note: Replace the placeholder boxes above with your actual Figma screenshots by adding &lt;img&gt; tags pointing to your screenshot files.</p>
+  </div>
+</section>
+
+<footer>
+  <strong>FirstPath</strong> — CSE 400: Foundations of Human-Computer Interaction<br>
+  Emmanuel Peralta Castro · SUID: 463396105 · Syracuse University
+</footer>
+
+</body>
+</html>

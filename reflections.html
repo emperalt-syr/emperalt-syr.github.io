@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections — FirstPath</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">FP</div>
+      FirstPath
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="overview.html">Overview</a></li>
+      <li><a href="design-process.html">Design Process</a></li>
+      <li><a href="prototyping.html">Prototype</a></li>
+      <li><a href="heuristic-evaluation.html">Evaluation</a></li>
+      <li><a href="reflections.html">Reflections</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Reflections & Conclusion</span>
+    <h1>What we learned <span>building FirstPath</span></h1>
+    <p class="hero-sub">Lessons from three phases of needfinding, design, prototyping, and evaluation.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Lessons Learned</div>
+    <h2 class="section-title">What worked, what surprised us, what we'd do differently</h2>
+
+    <div class="reflection-grid">
+      <div class="reflection-card">
+        <h3>What worked well</h3>
+        <p>Starting with real sources — Reddit communities, NCES data, and Pew Research — before touching any design decisions meant every feature had a reason to exist. The eligibility checker and peer tips weren't added because they seemed like good ideas. They were added because the research showed students were being stopped by wasted effort and institutional distrust. Grounding design decisions in evidence made the prototype stronger and easier to defend.</p>
+      </div>
+      <div class="reflection-card">
+        <h3>What surprised us</h3>
+        <p>The biggest surprise was how much the emotional barrier mattered. The early assumption was that discoverability was the core problem — students just needed a better way to find resources. But the research consistently showed that students knew things existed and still didn't pursue them, because they didn't feel like those resources were meant for someone like them. That realization changed the entire design direction, from a search tool into something that actively signals belonging.</p>
+      </div>
+      <div class="reflection-card">
+        <h3>What we'd improve</h3>
+        <p>With more time, the language-switching feature would be fully built out rather than noted as a planned addition. The peer tips section would include more voices across more scholarships. And ideally the app would be tested with real first-gen students to validate whether the design decisions that seemed right on paper actually land the way they were intended — particularly the privacy note and the eligibility checker framing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Impact of Evaluation</div>
+    <h2 class="section-title">How heuristic evaluation shaped the final design</h2>
+    <p class="section-body">The heuristic evaluation was one of the most useful parts of the process. Having another set of eyes on the prototype immediately surfaced issues that were invisible from inside the design — the cut-off reminder date, the missing eligibility badge on most cards, and the lack of any explanation for why personal information was being collected. Each of those was a real usability problem that would have caused a first-gen student on a phone between classes to lose trust or give up. The fixes weren't cosmetic. They were structural changes that made the core tasks of the app actually work the way they were supposed to.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <h3>Prototype addresses user needs</h3>
+        <p>The final prototype directly addresses the six findings from needfinding — discoverability, trust, peer voices, deadline awareness, fragmentation, and language access — with specific, tested design decisions for each.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>Iteration improved the design</h3>
+        <p>Five specific changes were made between the lo-fi and hi-fi prototype based on heuristic findings. Each one removed a real barrier a first-gen student would have encountered on their first session with the app.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>What comes next</h3>
+        <p>The next phase would be user testing with real first-gen students, followed by a second round of iteration, and eventually a multilingual build with full Spanish support as a first-class feature rather than a future addition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-inner" style="text-align:center; max-width: 600px; margin: 0 auto;">
+    <div class="section-label">Final Thought</div>
+    <h2 class="section-title" style="max-width:100%">Access to opportunity shouldn't depend on who you know.</h2>
+    <p class="section-body" style="max-width:100%; margin:0 auto 0;">FirstPath is built on the belief that the resources exist — the gap is in how they reach the students who need them most. Every design decision in this project was made with that belief as the foundation.</p>
+  </div>
+</section>
+
+<footer>
+  <strong>FirstPath</strong> — CSE 400: Foundations of Human-Computer Interaction<br>
+  Emmanuel Peralta Castro · SUID: 463396105 · Syracuse University
+</footer>
+
+</body>
+</html>

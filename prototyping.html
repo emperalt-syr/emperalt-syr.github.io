@@ -6,6 +6,49 @@
   <title>Prototype — FirstPath</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .figma-banner {
+      background: #2D5A27;
+      color: white;
+      padding: 20px 2rem;
+      text-align: center;
+    }
+    .figma-banner p {
+      font-size: 15px;
+      margin-bottom: 12px;
+      color: rgba(255,255,255,0.85);
+    }
+    .figma-btn {
+      display: inline-block;
+      background: white;
+      color: #2D5A27;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .screen-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #E5E5E0;
+      border-radius: 8px 8px 0 0;
+      object-fit: cover;
+    }
+    .screen-placeholder {
+      background: linear-gradient(135deg, #f0f0ee, #e8e8e4);
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: #888888;
+      text-align: center;
+      padding: 16px;
+      border-bottom: 1px solid #E5E5E0;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,7 +77,133 @@
   </div>
 </section>
 
+<div class="figma-banner">
+  <p>View the full interactive prototype with clickable flows for all three tasks</p>
+  <a href="https://www.figma.com/make/Oadhkn92I1z7SN5LDuexps/User-friendly-resource-hub?t=aUqxUYAsic6iJaYo-1" target="_blank" class="figma-btn">Open Figma Prototype →</a>
+</div>
+
 <section class="section">
+  <div class="section-inner">
+    <div class="section-label">Tools & Process</div>
+    <h2 class="section-title">How the prototype was built</h2>
+    <p class="section-body">The prototype was built in Figma using Figma AI to accelerate the screen design process. The design went through two major iterations — a low-fidelity prototype that established the basic flow and content, and a high-fidelity prototype that applied consistent visual design, added missing screens, and addressed issues identified during heuristic evaluation. All screens were designed mobile-first for iPhone with a consistent color system, bottom navigation bar, and plain-language copy throughout.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Design tool</h3>
+        <p>Figma — used for both lo-fi and hi-fi prototyping, with connected flows allowing click-through navigation across all three tasks.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📐</div>
+        <h3>Design system</h3>
+        <p>Consistent green color palette (dark forest green for primary actions, light green for positive results, amber for deadline urgency), Inter typeface, and rounded card components throughout.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>Iteration process</h3>
+        <p>Lo-fi prototype → heuristic evaluation → identified issues → revised hi-fi prototype. Key changes documented in the Evaluation page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Task 1</div>
+    <h2 class="section-title">Onboarding and finding a resource</h2>
+    <p class="section-body">Sofia opens FirstPath for the first time, enters her background, and gets a personalized list of scholarships she actually qualifies for.</p>
+    <div class="screens-grid">
+      <div class="screen-card">
+        <img src="images/task1-onboarding.png" alt="Profile setup screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Profile Setup</div>
+        <div class="screen-label">Profile Setup</div>
+        <div class="screen-caption">Sofia enters her first-gen status, year, and major. A privacy note explains why the info is needed.</div>
+      </div>
+      <div class="screen-card">
+        <img src="images/task1-feed.png" alt="Resource feed screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Resource Feed</div>
+        <div class="screen-label">Resource Feed</div>
+        <div class="screen-caption">Personalized feed shows 3 matching scholarships with amounts, deadlines, and eligibility badges.</div>
+      </div>
+      <div class="screen-card">
+        <img src="images/task1-detail.png" alt="Resource detail screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Resource Detail</div>
+        <div class="screen-label">Resource Detail</div>
+        <div class="screen-caption">Plain-language description, eligibility checklist, deadline in amber, and a "Save + Remind me" button.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Task 2</div>
+    <h2 class="section-title">Using the eligibility checker</h2>
+    <p class="section-body">Before spending an hour on an application, Sofia answers four quick questions and gets a clear yes or no in under a minute.</p>
+    <div class="screens-grid">
+      <div class="screen-card">
+        <img src="images/task2-checker.png" alt="Eligibility checker screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Eligibility Check</div>
+        <div class="screen-label">Eligibility Check</div>
+        <div class="screen-caption">Four questions with radio buttons. Progress bar shows "Question 1 of 4." Takes under 1 minute.</div>
+      </div>
+      <div class="screen-card">
+        <img src="images/task2-results.png" alt="Eligibility results screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 You Qualify</div>
+        <div class="screen-label">You Qualify</div>
+        <div class="screen-caption">Large green checkmark, "You qualify!" in bold, match score, and bulleted document checklist.</div>
+      </div>
+      <div class="screen-card">
+        <img src="images/task2-start.png" alt="Start application screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Next Steps</div>
+        <div class="screen-label">Next Steps</div>
+        <div class="screen-caption">"Start application" primary button with "Set a deadline reminder first" as a secondary option.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Task 3</div>
+    <h2 class="section-title">Setting a deadline alert</h2>
+    <p class="section-body">Sofia sets a reminder with one tap and gets a push notification at the right moment — with a peer tip waiting for her when she opens it.</p>
+    <div class="screens-grid">
+      <div class="screen-card">
+        <img src="images/task3-reminder.png" alt="Set reminder screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Set Reminder</div>
+        <div class="screen-label">Set Reminder</div>
+        <div class="screen-caption">Four timing options with exact calendar dates. "1 week before" labeled as Recommended.</div>
+      </div>
+      <div class="screen-card">
+        <img src="images/task3-notification.png" alt="Reminder confirmation screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Reminder Confirmed</div>
+        <div class="screen-label">Reminder Confirmed</div>
+        <div class="screen-caption">Full lock screen preview of what the notification will look like. Exact date and time confirmed.</div>
+      </div>
+      <div class="screen-card">
+        <img src="images/task3-peertips.png" alt="Peer tips screen" class="screen-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="screen-placeholder" style="display:none;">📱 Peer Tips</div>
+        <div class="screen-label">Peer Tips</div>
+        <div class="screen-caption">Maria Torres, Junior, Communication Studies. Real quote and three numbered tips from someone who applied and won.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>FirstPath</strong> — CSE 400: Foundations of Human-Computer Interaction<br>
+  Emmanuel Peralta Castro · SUID: 463396105 · Syracuse University
+</footer>
+
+</body>
+</html><section class="section">
   <div class="section-inner">
     <div class="section-label">Tools & Process</div>
     <h2 class="section-title">How the prototype was built</h2>
